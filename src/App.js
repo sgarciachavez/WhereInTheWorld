@@ -36,11 +36,11 @@ class App extends Component {
                <MainContainer/>
            }/>
 
-           <Route exact path='/country' render={() =>
+           <Route exact path='/country/' render={() =>
                <CountryDetails/>
            }/>
 
-           <Route exact path='/search' render={() =>
+           <Route exact path='/search/' render={() =>
                <SearchContainer/>
            }/>
 

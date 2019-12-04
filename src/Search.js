@@ -15,10 +15,9 @@ class Search extends Component{
 
 
   render(){
-    let url = `/search?name=${this.state.search}`;
+    let url = `/search/?name=${this.state.search}`;
     const theme = document.documentElement.getAttribute("data-theme");
 
-    console.log("theme", theme);
     return(
       <div className="search-area">
          <div>

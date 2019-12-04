@@ -8,7 +8,7 @@ class Countries extends Component{
       <div className="card-container">
         {this.props.countries.map((country)=> (
           <Link
-            to={{pathname: '/country', search: `?code=${country.alpha3Code}`}}
+            to={{pathname: '/country/', search: `?code=${country.alpha3Code}`}}
             key={country.alpha3Code} style={{ textDecoration: 'none', color: 'white' }}>
           <div className="card" >
             <div className="flag"
