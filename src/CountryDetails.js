@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import arrow from './images/left-arrow.svg';
+import blk_arrow from './images/left-arrow-blk.svg';
 import Borders from './Borders.js'
 
 class CountryDetails extends Component{
@@ -43,7 +44,8 @@ class CountryDetails extends Component{
     return(
       <div className="details-container">
         <Link to='/'>
-          <Button variant={theme}><img src={arrow} className="moonw" alt="left arrow" />
+          <Button variant={theme}>
+            <img src={theme === "light" ? blk_arrow : arrow} className="moonw" alt="left arrow" />
             Back to all countries
           </Button>
         </Link>
