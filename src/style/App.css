@@ -68,7 +68,7 @@ code {
   display: flex;
   flex-direction: column;
   width: 10em;
-  height: 16em;
+  height: 20em;
   margin-bottom: 2em;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -87,7 +87,7 @@ code {
 }
 
 .info{
-  font-size: .7em;
+  font-size: 1em;
 }
 .details-container{
   color: var(--primaryTextColor);
