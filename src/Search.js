@@ -12,14 +12,9 @@ class Search extends Component{
     this.setState({search:event.target.value})
   }
 
-
   render(){
     let url = `/search/?name=${this.state.search}`;
-    let theme = "dark";
-    if(localStorage.getItem( 'theme' ) !== null){
-      theme = theme.toLowerCase();
-    }
-
+    let theme = localStorage.getItem( 'theme' );
 
     return(
       <div className="search-area">
@@ -40,7 +35,7 @@ class Search extends Component{
              </InputGroup>
          </div>
          <div>
-           <DropdownButton id="region-filter" title="Filter by Region" variant={theme === "light" ? "light" : "dark" }>
+           <DropdownButton id="region-filter" title="Filter by Region" variant={theme}>
              <Dropdown.Item href="/">All Regions</Dropdown.Item>
              <Dropdown.Item href="?region=Africa">Africa</Dropdown.Item>
              <Dropdown.Item href="?region=Americas">Americas</Dropdown.Item>

@@ -27,7 +27,7 @@ class CountryDetails extends Component{
   }
 
   render(){
-    const theme = localStorage.getItem( 'theme' ).toLowerCase();
+    const theme = localStorage.getItem( 'theme' );
     if(this.state.country.currencies !== undefined){
       this.currencies = this.state.country.currencies.map((item, key) =>
             <li key={item.code}>{item.name}</li>
@@ -43,7 +43,7 @@ class CountryDetails extends Component{
     return(
       <div className="details-container">
         <Link to='/'>
-          <Button variant={theme === "light" ? "light": "dark"}><img src={arrow} className="moonw" alt="left arrow" />
+          <Button variant={theme}><img src={arrow} className="moonw" alt="left arrow" />
             Back to all countries
           </Button>
         </Link>

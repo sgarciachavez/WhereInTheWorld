@@ -10,27 +10,36 @@ import { Button } from 'react-bootstrap';
 
 class App extends Component {
   state = {
-       theme: "Dark"
+       theme: "dark",
+       label: "Dark"
      }
 
      toggleTheme = ()=> {
-         var theme = this.state.theme === "Dark" ? "Light" : "Dark";
-         this.setState({ theme: theme });
-         document.documentElement.setAttribute("data-theme", theme);
-         localStorage.setItem( 'theme', theme );
+         var theme = this.state.theme === "dark" ? "light" : "dark";
+         this.updateState(theme);
+      }
+
+      updateState = (theme) => {
+        console.log("Got theme", theme);
+        console.log("localStorage", localStorage.getItem( 'theme' ));
+        console.log("this.state.theme", this.state.theme);
+        if(theme === null){
+          theme = "dark";
+        }
+        this.setState({ theme: theme });
+        console.log("Saved theme", theme);
+        var label = theme === "dark" ? "Dark" : "Light";
+        this.setState({label: label});
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem( 'theme', theme );
+        console.log("localStorage-After", localStorage.getItem( 'theme' ));
       }
 
       componentDidMount(){
-        var theme = localStorage.getItem( 'theme' );
-        if( theme === undefined){
-          localStorage.setItem( 'theme', "Dark" );
-        }
-        document.documentElement.setAttribute("data-theme", theme);
-        this.setState({ theme: theme });
+        this.updateState(localStorage.getItem( 'theme' ));
       }
 
      render(){
-       let theme = this.state.theme === "Dark" ? "dark" :" light";
 
        return (
          <div className="main">
@@ -39,8 +48,8 @@ class App extends Component {
              <div className="mode">
                <img src={moonw} className="moonw" alt="moon" />
                <Button className="mode-button"
-                  variant={theme} onClick={this.toggleTheme}>
-                 {this.state.theme} Mode
+                  variant={this.state.theme} onClick={this.toggleTheme}>
+                 {this.state.label} Mode
                </Button>
              </div>
            </div>

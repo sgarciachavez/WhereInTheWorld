@@ -8,7 +8,6 @@ class SearchContainer extends Component{
      }
 
   componentDidMount() {
-        //http://localhost:3000/search?name=United
         const searchParams = new URLSearchParams(window.location.search);
         const name = searchParams.get('name');
         const fields = "?fields=name;population;region;capital;flag;alpha3Code";

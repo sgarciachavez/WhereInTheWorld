@@ -20,7 +20,7 @@ class Borders extends Component{
      }
 
   render(){
-    const theme = localStorage.getItem( 'theme' ).toLowerCase();
+    const theme = localStorage.getItem( 'theme' );
     if(this.props.codes !== undefined){
       this.getBorders();
     }
@@ -29,7 +29,7 @@ class Borders extends Component{
       this.borders = this.state.borders.map((item, key) =>{
         let url = `/country/?code=${item.alpha3Code}`
         return (
-          <Button variant={theme === "light"? "light" : "dark"} key={item.alpha3Code} href={url} size="sm" className="border-country">
+          <Button variant={theme} key={item.alpha3Code} href={url} size="sm" className="border-country">
             {item.name}
           </Button>
         )

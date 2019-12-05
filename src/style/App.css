@@ -19,7 +19,7 @@ code {
     --primaryHeaderColor:#343a40;
 }
 
-:root[data-theme="Light"]{
+:root[data-theme="light"]{
     --primaryBackground: white;
     --primaryTextColor: black;
     --primaryHeaderColor:#e0e1e2;

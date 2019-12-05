@@ -26,7 +26,6 @@ class MainContainer extends Component{
       }
 
   render(){
-    document.documentElement.setAttribute("data-theme", localStorage.getItem( 'theme' ));
     return(
       <div className="container">
         <Search />
