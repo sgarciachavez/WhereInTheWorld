@@ -10,7 +10,7 @@ import { Button } from 'react-bootstrap';
 
 class App extends Component {
   state = {
-       theme: "Dark",
+       theme: "Dark"
      }
 
      toggleTheme = ()=> {
