@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 class Countries extends Component{
   render(){
-
+    
     return(
       <div className="card-container">
         {this.props.countries.map((country)=> (

@@ -14,13 +14,23 @@ class App extends Component {
      }
 
      toggleTheme = ()=> {
-         const theme = this.state.theme === 'Dark' ? 'Light' : 'Dark';
+         var theme = this.state.theme === "Dark" ? "Light" : "Dark";
          this.setState({ theme: theme });
          document.documentElement.setAttribute("data-theme", theme);
+         localStorage.setItem( 'theme', theme );
+      }
+
+      componentDidMount(){
+        var theme = localStorage.getItem( 'theme' );
+        if( theme === undefined){
+          localStorage.setItem( 'theme', "Dark" );
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+        this.setState({ theme: theme });
       }
 
      render(){
-
+       
        return (
          <div className="main">
            <div className="title-container">
@@ -34,15 +44,15 @@ class App extends Component {
              </div>
            </div>
            <Route exact path='/' render={() =>
-               <MainContainer/>
+               <MainContainer />
            }/>
 
            <Route exact path='/country/' render={() =>
-               <CountryDetails/>
+               <CountryDetails />
            }/>
 
            <Route exact path='/search/' render={() =>
-               <SearchContainer/>
+               <SearchContainer />
            }/>
 
          </div>

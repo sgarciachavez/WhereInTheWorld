@@ -95,9 +95,13 @@ code {
   padding: 1.5em 0 1.5em 3em;
 }
 .flag-container{
-  padding-top: 3em;
-  padding-right: 3em;
-  width:50%;
+  margin-top: 2em;
+  width: 20em;
+
+}
+.info-container{
+  padding: 2em;
+  width: 30em;
 }
 .country-info{
   display: flex;
@@ -107,9 +111,7 @@ code {
 .responsive {
   width: 100%;
   height: auto;
-}
-.info-container{
-  padding-top: 4em;
+  border-style: outset;
 }
 
 .info-two{
@@ -168,8 +170,10 @@ code {
     padding-right: 3em;
     width: 100%;
   }
+
   .info-container{
-    padding-top: 1em;
+    padding: 1em;
+    width: 100%;
   }
   .flag{
     width: 100%;

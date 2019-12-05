@@ -6,8 +6,7 @@ import { Button } from 'react-bootstrap';
 
 class Search extends Component{
   state = {
-    search: "",
-    theme: "Dark"
+    search: ""
   }
   handleChange=(event) => {
     this.setState({search:event.target.value})
@@ -16,8 +15,8 @@ class Search extends Component{
 
   render(){
     let url = `/search/?name=${this.state.search}`;
-    const theme = document.documentElement.getAttribute("data-theme");
-
+    const theme = localStorage.getItem( 'theme' ).toLowerCase();
+    
     return(
       <div className="search-area">
          <div>
@@ -31,13 +30,13 @@ class Search extends Component{
               </form>
                <InputGroup.Append>
                 <Button variant="outline-secondary" href={url}>
-                  <img src={theme === "Light" ? mglass_blk : mglass } className="" alt="magnifying glass" />
+                  <img src={theme === "light" ? mglass_blk : mglass } className="" alt="magnifying glass" />
                 </Button>
                </InputGroup.Append>
              </InputGroup>
          </div>
          <div>
-           <DropdownButton id="region-filter" title="Filter by Region" variant={theme === "Light" ? "light" : "dark" }>
+           <DropdownButton id="region-filter" title="Filter by Region" variant={theme === "light" ? "light" : "dark" }>
              <Dropdown.Item href="/">All Regions</Dropdown.Item>
              <Dropdown.Item href="?region=Africa">Africa</Dropdown.Item>
              <Dropdown.Item href="?region=Americas">Americas</Dropdown.Item>

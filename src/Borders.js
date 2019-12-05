@@ -6,7 +6,7 @@ class Borders extends Component{
        borders: [],
        fetch: true
      }
-     
+
      getBorders(){
        if(this.state.fetch){
          const url = "https://restcountries.eu/rest/v2/alpha?codes=" + this.props.codes.join(";")
@@ -20,7 +20,7 @@ class Borders extends Component{
      }
 
   render(){
-    const theme = document.documentElement.getAttribute("data-theme");
+    const theme = localStorage.getItem( 'theme' ).toLowerCase();
     if(this.props.codes !== undefined){
       this.getBorders();
     }
@@ -29,7 +29,7 @@ class Borders extends Component{
       this.borders = this.state.borders.map((item, key) =>{
         let url = `/country/?code=${item.alpha3Code}`
         return (
-          <Button variant={theme === "Light"? "light" : "dark"} key={item.alpha3Code} href={url} size="sm" className="border-country">
+          <Button variant={theme === "light"? "light" : "dark"} key={item.alpha3Code} href={url} size="sm" className="border-country">
             {item.name}
           </Button>
         )
