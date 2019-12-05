@@ -30,7 +30,8 @@ class App extends Component {
       }
 
      render(){
-       
+       let theme = this.state.theme === "Dark" ? "dark" :" light";
+
        return (
          <div className="main">
            <div className="title-container">
@@ -38,7 +39,7 @@ class App extends Component {
              <div className="mode">
                <img src={moonw} className="moonw" alt="moon" />
                <Button className="mode-button"
-                  variant={this.state.theme.toLowerCase()} onClick={this.toggleTheme}>
+                  variant={theme} onClick={this.toggleTheme}>
                  {this.state.theme} Mode
                </Button>
              </div>
