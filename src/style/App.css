@@ -43,6 +43,7 @@ code {
 .mode{
   float: right;
 }
+
 .moonw{
   color: var(--primaryTextColor);
   width: 1.4em;
@@ -142,4 +143,22 @@ code {
     justify-content: center;
     align-items: center;
   }
+  .title-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryHeaderColor);
+    color: var(--primaryTextColor);
+    padding: 1em .5em 1em .5em;
+  }
+  .mode-button{
+    margin-left: 0;
+  }
+  .title{
+    font-weight: bold;
+    padding-bottom: 1em;
+  }
+
 }

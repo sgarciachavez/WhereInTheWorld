@@ -27,7 +27,8 @@ class App extends Component {
              <div className="title">Where in the world? </div>
              <div className="mode">
                <img src={moonw} className="moonw" alt="moon" />
-               <Button variant={this.state.theme.toLowerCase()} onClick={this.toggleTheme}>
+               <Button className="mode-button"
+                  variant={this.state.theme.toLowerCase()} onClick={this.toggleTheme}>
                  {this.state.theme} Mode
                </Button>
              </div>
