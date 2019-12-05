@@ -30,7 +30,6 @@ class Countries extends Component{
           </div>
           </Link>
         ))}
-
       </div>
     )
   }
