@@ -15,8 +15,12 @@ class Search extends Component{
 
   render(){
     let url = `/search/?name=${this.state.search}`;
-    const theme = localStorage.getItem( 'theme' ).toLowerCase();
-    
+    let theme = "dark";
+    if(localStorage.getItem( 'theme' ) !== null){
+      theme = theme.toLowerCase();
+    }
+
+
     return(
       <div className="search-area">
          <div>
