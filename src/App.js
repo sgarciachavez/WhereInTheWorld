@@ -20,19 +20,14 @@ class App extends Component {
       }
 
       updateState = (theme) => {
-        console.log("Got theme", theme);
-        console.log("localStorage", localStorage.getItem( 'theme' ));
-        console.log("this.state.theme", this.state.theme);
         if(theme === null){
           theme = "dark";
         }
         this.setState({ theme: theme });
-        console.log("Saved theme", theme);
         var label = theme === "dark" ? "Dark" : "Light";
         this.setState({label: label});
         document.documentElement.setAttribute("data-theme", theme);
         localStorage.setItem( 'theme', theme );
-        console.log("localStorage-After", localStorage.getItem( 'theme' ));
       }
 
       componentDidMount(){
