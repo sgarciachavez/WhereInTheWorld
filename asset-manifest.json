@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/WhereInTheWorld/static/css/main.b5b4601a.chunk.css",
+    "main.js": "/WhereInTheWorld/static/js/main.adc04f72.chunk.js",
+    "main.js.map": "/WhereInTheWorld/static/js/main.adc04f72.chunk.js.map",
+    "runtime-main.js": "/WhereInTheWorld/static/js/runtime-main.fef0df9e.js",
+    "runtime-main.js.map": "/WhereInTheWorld/static/js/runtime-main.fef0df9e.js.map",
+    "static/css/2.9ff99f11.chunk.css": "/WhereInTheWorld/static/css/2.9ff99f11.chunk.css",
+    "static/js/2.5b157a5e.chunk.js": "/WhereInTheWorld/static/js/2.5b157a5e.chunk.js",
+    "static/js/2.5b157a5e.chunk.js.map": "/WhereInTheWorld/static/js/2.5b157a5e.chunk.js.map",
+    "index.html": "/WhereInTheWorld/index.html",
+    "precache-manifest.47dc44846908ba36b9b7cdf2afd1f31e.js": "/WhereInTheWorld/precache-manifest.47dc44846908ba36b9b7cdf2afd1f31e.js",
+    "service-worker.js": "/WhereInTheWorld/service-worker.js",
+    "static/css/2.9ff99f11.chunk.css.map": "/WhereInTheWorld/static/css/2.9ff99f11.chunk.css.map",
+    "static/css/main.b5b4601a.chunk.css.map": "/WhereInTheWorld/static/css/main.b5b4601a.chunk.css.map",
+    "static/media/left-arrow-blk.svg": "/WhereInTheWorld/static/media/left-arrow-blk.fc68b46a.svg",
+    "static/media/left-arrow.svg": "/WhereInTheWorld/static/media/left-arrow.c5dfb360.svg",
+    "static/media/mag-glass.svg": "/WhereInTheWorld/static/media/mag-glass.6650aba8.svg",
+    "static/media/mag-glass_blk.svg": "/WhereInTheWorld/static/media/mag-glass_blk.6f5fc00b.svg",
+    "static/media/moon-white.svg": "/WhereInTheWorld/static/media/moon-white.74556d31.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fef0df9e.js",
+    "static/css/2.9ff99f11.chunk.css",
+    "static/js/2.5b157a5e.chunk.js",
+    "static/css/main.b5b4601a.chunk.css",
+    "static/js/main.adc04f72.chunk.js"
+  ]
+}
