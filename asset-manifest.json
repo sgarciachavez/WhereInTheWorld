@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WhereInTheWorld/static/css/main.b5b4601a.chunk.css",
-    "main.js": "/WhereInTheWorld/static/js/main.22676283.chunk.js",
-    "main.js.map": "/WhereInTheWorld/static/js/main.22676283.chunk.js.map",
+    "main.js": "/WhereInTheWorld/static/js/main.8cf17a6e.chunk.js",
+    "main.js.map": "/WhereInTheWorld/static/js/main.8cf17a6e.chunk.js.map",
     "runtime-main.js": "/WhereInTheWorld/static/js/runtime-main.fef0df9e.js",
     "runtime-main.js.map": "/WhereInTheWorld/static/js/runtime-main.fef0df9e.js.map",
     "static/css/2.9ff99f11.chunk.css": "/WhereInTheWorld/static/css/2.9ff99f11.chunk.css",
-    "static/js/2.058b43ce.chunk.js": "/WhereInTheWorld/static/js/2.058b43ce.chunk.js",
-    "static/js/2.058b43ce.chunk.js.map": "/WhereInTheWorld/static/js/2.058b43ce.chunk.js.map",
+    "static/js/2.5b157a5e.chunk.js": "/WhereInTheWorld/static/js/2.5b157a5e.chunk.js",
+    "static/js/2.5b157a5e.chunk.js.map": "/WhereInTheWorld/static/js/2.5b157a5e.chunk.js.map",
     "index.html": "/WhereInTheWorld/index.html",
-    "precache-manifest.d6bb32b229bf1bbed6b92e42d8880233.js": "/WhereInTheWorld/precache-manifest.d6bb32b229bf1bbed6b92e42d8880233.js",
+    "precache-manifest.696b20ff9459e4d078abc73c849111a2.js": "/WhereInTheWorld/precache-manifest.696b20ff9459e4d078abc73c849111a2.js",
     "service-worker.js": "/WhereInTheWorld/service-worker.js",
     "static/css/2.9ff99f11.chunk.css.map": "/WhereInTheWorld/static/css/2.9ff99f11.chunk.css.map",
     "static/css/main.b5b4601a.chunk.css.map": "/WhereInTheWorld/static/css/main.b5b4601a.chunk.css.map",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.fef0df9e.js",
     "static/css/2.9ff99f11.chunk.css",
-    "static/js/2.058b43ce.chunk.js",
+    "static/js/2.5b157a5e.chunk.js",
     "static/css/main.b5b4601a.chunk.css",
-    "static/js/main.22676283.chunk.js"
+    "static/js/main.8cf17a6e.chunk.js"
   ]
 }
