@@ -133,6 +133,37 @@ code {
   padding-left: .5em;
 }
 
+.not-found{
+  background-color: var(--primaryBackground);
+  color: var(--primaryTextColor);
+  padding: 1.25em 3em 1.25em 3em;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding-top: 8px;
+  background: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+  
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid var(--primaryTextColor);
+}
+
 @media only screen and (max-width: 510px) {
   .card-container{
     display: flex;
@@ -184,5 +215,8 @@ code {
     color: var(--primaryTextColor);
     height: 50%;
     padding: .5em;
+  }
+  .white-text{
+    color: var(--primaryTextColor);
   }
 }

@@ -13,7 +13,7 @@ class CountryDetails extends Component{
   componentDidMount() {
     const searchParams = new URLSearchParams(window.location.search);
     const code = searchParams.get('code');
-
+    
     if(code !== null){
       const fields = "?fields=name;nativeName;population;region;subregion;capital;topLevelDomain;currencies;languages;borders;flag";
       let url = 'https://restcountries.eu/rest/v2/alpha/' + code + fields;

@@ -27,7 +27,7 @@ class Borders extends Component{
 
     if(this.state.borders !== undefined && this.state.borders.length > 0 ){
       this.borders = this.state.borders.map((item, key) =>{
-        let url = `/country/?code=${item.alpha3Code}`
+        let url = `./?code=${item.alpha3Code}`
         return (
           <Button variant={theme} key={item.alpha3Code} href={url} size="sm" className="border-country">
             {item.name}

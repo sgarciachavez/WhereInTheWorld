@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import moonw from './images/moon-white.svg';
-import MainContainer from './MainContainer.js'
 import SearchContainer from './SearchContainer.js'
 import CountryDetails from './CountryDetails.js'
 import './style/App.css';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { Button } from 'react-bootstrap';
 
 
@@ -39,7 +38,7 @@ class App extends Component {
        return (
          <div className="main">
            <div className="title-container">
-             <div className="title">Where in the world? </div>
+             <div className="title">Where in the world?</div>
              <div className="mode">
                <img src={moonw} className="moonw" alt="moon" />
                <Button className="mode-button"
@@ -48,18 +47,12 @@ class App extends Component {
                </Button>
              </div>
            </div>
-           <Route exact path='/' render={() =>
-               <MainContainer />
-           }/>
-
-           <Route exact path='/country/' render={() =>
-               <CountryDetails />
-           }/>
-
-           <Route exact path='/search/' render={() =>
-               <SearchContainer />
-           }/>
-
+          
+          <Switch>
+            <Route exact path={['/', '/search']}>  <SearchContainer /> </Route>
+            <Route path='/country'> <CountryDetails />  </Route>
+            <Route render={() => <h1 className="not-found">404: page not found</h1>} />
+          </Switch>
          </div>
        )
      }
